@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Scheduler.DomainModels\Scheduler.DomainModels.csproj" />
+    <ProjectReference Include="..\Scheduler.Managers\Scheduler.Managers.csproj" />
+    <ProjectReference Include="..\Scheduler.Api.Compose\Scheduler.Api.Compose.csproj" />
+  </ItemGroup>
+
+</Project>

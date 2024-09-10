@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cron.Extensions.Expressions" Version="0.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Scheduler.DomainModels\Scheduler.DomainModels.csproj" />
+    <ProjectReference Include="..\Scheduler.Managers\Scheduler.Managers.csproj" />
+    <ProjectReference Include="..\Scheduler.Infrastructure\Scheduler.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
